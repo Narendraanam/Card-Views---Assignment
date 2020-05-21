@@ -8,11 +8,20 @@
 
 import UIKit
 
+
+
+
 class DetailsCell: UITableViewCell {
+    
+    @IBOutlet weak var nameTxt_Label: UILabel!
+    @IBOutlet weak var ageText_Label: UILabel!
+    @IBOutlet weak var imagesView: UIImageView!
+    @IBOutlet weak var locationText_Label: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imagesView.layer.cornerRadius = 40
+        imagesView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
